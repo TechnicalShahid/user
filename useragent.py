@@ -11,6 +11,7 @@ import random,os,time
 
 
 def pr():
+os.system('xdg-open https://www.youtube.com/channel/UC_Baen2RSXwETLfDRyS6A_g')
 	print('Refreshing Proxy\033[0m')
 	r = get('https://www.proxy-list.download/api/v1/get?type=https').text
 	return r.split()
