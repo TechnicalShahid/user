@@ -12,7 +12,6 @@ import random,os,time
 
 def pr():
 	print('Refreshing Proxy\033[0m')
-        os.system('xdg-open https://www.youtube.com/channel/UC_Baen2RSXwETLfDRyS6A_g')
 	r = get('https://www.proxy-list.download/api/v1/get?type=https').text
 	return r.split()
 def crawler():
@@ -55,6 +54,7 @@ def crawler():
 		for ua in userA:
 			f.write(ua+'\n')
 		print(f'\n\033[92mFinished. {len(userA)} useragents saved to useragents.txt\033[0m')
+                os.system('xdg-open https://www.youtube.com/channel/UC_Baen2RSXwETLfDRyS6A_g')
 	
 if __name__=='__main__':
 	os.system('clear')
